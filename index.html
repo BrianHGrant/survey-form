@@ -35,7 +35,7 @@
 
           <p class="formlabels">Favorite Meal:</p>
           <select class="form-control" id="meal">
-            <option>Breakfast</option>
+            <option id="breakfast">Breakfast</option>
             <option>Lunch</option>
             <option>Dinner</option>
           </select>
@@ -61,8 +61,10 @@
           </div>
 
           <button type="submit" class="btn btn-lg">Submit!</button>
+          <button type="button" class="btn btn-lg btn-danger" id="reset">Reset!</button>
         </form>
       </div>
+
 
       <div id="confirmation">
         <h2>Is This Correct?</h2>
@@ -75,7 +77,7 @@
           Type of Person: <span class="time"></span><br>
           Favorite Color: <span id="favcolor" class="color">&nbsp; &nbsp; &nbsp; &nbsp;</span>
         </p>
-
+        <button type="button" class="btn" id="close">Close Confirmation</button>
       </div>
     </div>
   </body>

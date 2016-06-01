@@ -20,4 +20,18 @@ $(function() {
 
       event.preventDefault();
   });
+
+  $("button#close").click(function() {
+    $("#confirmation").hide();
+  });
+
+  $("button#reset").click(function() {
+    $(this).closest("form").find("input[type=text], textarea").val("");
+    $(this).closest("form").find("input[type=date], textarea").val("");
+    // $(this).closest("form").find("input:selected").removeAttr("selected");
+    // $("#breakfast").attr("selected");
+    $(this).closest("form").find("input:checked").removeAttr("checked");
+    $(this).closest("form").find("input[type=color]").val("#000000");
+    $("#confirmation").hide();
+  });
 });
