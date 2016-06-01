@@ -5,3 +5,12 @@
 #meal {
   margin-bottom: 1em;
 }
+
+#confirmation {
+  display: none;
+}
+
+/*#favcolor {
+  width: 1em;
+  height: 1em;
+}*/
